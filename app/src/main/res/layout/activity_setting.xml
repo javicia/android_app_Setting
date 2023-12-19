@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_text_title"
                 android:text="@string/dark_mode"/>
 
             <TextView
@@ -67,7 +66,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_text_title"
                 android:text="@string/bluetooth"/>
 
             <TextView
@@ -111,10 +110,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_text_title"
                 android:text="@string/volume"/>
 
            <com.google.android.material.slider.RangeSlider
+               android:id="@+id/rsVolumen"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:valueFron="0"
@@ -141,7 +141,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/black"
+                android:textColor="@color/settings_text_title"
                 android:text="@string/vibration"/>
 
         <com.google.android.material.switchmaterial.SwitchMaterial
